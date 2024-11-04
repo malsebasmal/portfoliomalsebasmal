@@ -1,28 +1,20 @@
 ---
 import Layout from "@/layouts/Layout.astro"
 import HeroSection from "@/sections/HeroSection.astro"
+import TechnologiesSection from "@/sections/TechnologiesSection.astro"
 import ProjectsSection from "@/sections/ProjectsSection.astro"
 import AboutMe from "@/sections/AboutMe.astro"
 import Navbar from "@/components/Navbar.astro"
 ---
 
 <Layout title="malsebasmal portfolio">
-	<header class="bg-red-500 w-full h-20">
+	<header class="bg-red-500 w-full h-28">
 		<Navbar />
 	</header>
-	<main>
+	<main class="w-full bg-orange-500 h-auto">
 		<HeroSection />
+		<TechnologiesSection />
 		<ProjectsSection />
 		<AboutMe />
 	</main>
 </Layout>
-
-<style>
-	main {
-		width: 800px;
-		max-width: calc(100% - 2rem);
-		/* color: white; */
-		font-size: 20px;
-		line-height: 1.6;
-	}
-</style>
