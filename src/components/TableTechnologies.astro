@@ -1,51 +1,29 @@
 ---
-
-
 const TECHNOLOGIES = [
-  {
-    name: "JavaScript"
-  },
-  {
-    name: "HTML"
-  },
-  {
-    name: "CSS"
-  },
-  {
-    name: "Ruby On Rails"
-  },
-  {
-    name: "Tailwind CSS"
-  },
-  {
-    name: "Sass"
-  },
-  {
-    name: "Astro"
-  },
-  {
-    name: "React"
-  },
-  {
-    name: "Node.js"
-  },
-  {
-    name: "Express"
-  },
-  {
-    name: "PostgreSQL"
-  },
-  {
-    name: "MongoDB"
-  },
-  {
-    name: "Mongoose"
-  },
-  {
-    name: "Vite"
-  },
-  {
-    name: "Figma"
-  }
+  { name: "JavaScript", icon: "/src/technologies/javascript.svg" },
+  { name: "HTML", icon: "/src/technologies/html.svg" },
+  { name: "CSS", icon: "/src/technologies/css.svg" },
+  { name: "TypeScript", icon: "/src/technologies/typescript.svg" },
+  { name: "Ruby On Rails", icon: "/src/technologies/rails.svg" },
+  { name: "Tailwind CSS", icon: "/src/technologies/tailwind.svg" },
+  { name: "Sass", icon: "/src/technologies/sass.svg" },
+  { name: "Astro", icon: "/src/technologies/astroother.svg" },
+  { name: "React", icon: "/src/technologies/react.svg" },
+  { name: "Node.js", icon: "/src/technologies/nodejs.svg" },
+  { name: "Express", icon: "/src/technologies/express.svg" },
+  { name: "PostgreSQL", icon: "/src/technologies/postgresql.svg" },
+  { name: "MongoDB", icon: "/src/technologies/mongodb.svg" },
+  { name: "Mongoose", icon: "/src/technologies/mongoose.svg" },
+  { name: "Vite", icon: "/src/technologies/vite.svg" },
+  { name: "Figma", icon: "/src/technologies/figma.svg" }
 ]
 ---
+
+<ul class="flex flex-row flex-wrap gap-5 justify-center">
+  {TECHNOLOGIES.map((tech) => (
+    <li class="flex flex-row justify-center items-center bg-violet-700 py-2 px-4 gap-3 rounded-md">
+      <img class="w-16" src={tech.icon} alt={tech.name} />
+      <h3 class="text-lg">{tech.name}</h3>
+    </li>
+  ))}
+</ul>

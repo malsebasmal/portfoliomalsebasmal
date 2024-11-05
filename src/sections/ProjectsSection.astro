@@ -1,3 +1,61 @@
-<section>
-  
+---
+const PROJECTS = [
+  {
+    name: "Habet",
+    description: "lorem",
+    img: "/src/projects/8nortes.webp",
+    github: "https://github.com/diazlla123/HaBet",
+    urlPage: "https://www.linkedin.com/posts/antoniomaldonadotech_con-much%C3%ADsimo-entusiasmo-les-presento-habet-activity-7248095487398932481-G1NS?utm_source=share&utm_medium=member_desktop"
+  },
+  {
+    name: "8 nortes",
+    description: "lorem",
+    img: "/src/projects/8nortes.webp",
+    github: "https://github.com/malsebasmal/8nortes",
+    urlPage: "https://8nortes.pages.dev"
+  },
+  {
+    name: "LoloBelo",
+    description: "lorem",
+    img: "/src/projects/lolobelo.webp",
+    github: "https://github.com/malsebasmal/LoloBelo",
+    urlPage: "https://lolobelo.pages.dev"
+  },
+  {
+    name: "No Somos Tv",
+    description: "lorem",
+    img: "/src/projects/nosomostv.webp",
+    github: "https://github.com/malsebasmal/NoSomosTv-StaticPage",
+    urlPage: "https://nosomostv.netlify.app"
+  },
+  {
+    name: "Gallery Music",
+    description: "lorem",
+    img: "/src/projects/gallerymusic.webp",
+    github: "https://github.com/malsebasmal/GalleryMusic-StaticPage",
+    urlPage: "https://gallerymusic.netlify.app"
+  },
+  {
+    name: "My Phrase",
+    description: "lorem",
+    img: "/src/projects/myphrase.webp",
+    github: "https://github.com/malsebasmal/MyPhrase-StaticPage",
+    urlPage: "https://myphrase.netlify.app"
+  }
+]
+---
+
+<section class="w-full h-full flex justify-center items-center mt-20">
+  <div class="flex flex-row flex-wrap justify-center gap-4">
+    {PROJECTS.map((project) => (
+      <div class="mockup-browser bg-base-300 border w-[27vw] h-64">
+        <div class="mockup-browser-toolbar">
+          <div class="input">{project.urlPage}</div>
+        </div>
+        <div class="bg-base-200 flex justify-center h-full">
+          <img class="w-full h-full" src={project.img} alt={project.name} />
+        </div>
+      </div>
+    ))}
+  </div>
 </section>
