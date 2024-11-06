@@ -48,12 +48,12 @@ const PROJECTS = [
 <section class="w-full h-full flex justify-center items-center mt-20">
   <div class="flex flex-row flex-wrap justify-center gap-4">
     {PROJECTS.map((project) => (
-      <div class="mockup-browser bg-base-300 border w-[27vw] h-64">
+      <div class="mockup-browser rounded-lg bg-base-300 border w-[27vw] h-full">
         <div class="mockup-browser-toolbar">
           <div class="input">{project.urlPage}</div>
         </div>
-        <div class="bg-base-200 flex justify-center h-full">
-          <img class="w-full h-full" src={project.img} alt={project.name} />
+        <div class="bg-base-200 flex justify-center">
+          <img class="w-full" src={project.img} alt={project.name} />
         </div>
       </div>
     ))}
