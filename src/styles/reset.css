@@ -1,4 +1,4 @@
-/*TODO: RESET SACADO DE: https://github.com/eduardofierropro/Reset-CSS */
+/*TODO: https://github.com/eduardofierropro/Reset-CSS */
 
 @charset "UTF-8";
 /*
@@ -15,8 +15,8 @@
 :root {
   --blanco: black;
   /* Tipografía */
-  --tipo-principal: 'Lato', sans-serif;
-  --tipo-secundaria: 'Poppins', sans-serif;
+  --tipo-principal: 'Comfortaa Variable', system-ui;
+  --tipo-secundaria: 'Comfortaa Variable', system-ui;
 }
 
 /* Las adaptamos al modo oscuro */
