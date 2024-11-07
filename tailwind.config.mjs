@@ -4,7 +4,15 @@ import daisyui from "daisyui"
 export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
-		extend: {},
+		extend: {
+			colors: {
+				"pinkStrong": "#E27396",
+				"pinkSmooth": "#EA9AB2",
+				"pinkPastel": "#EFCFE3",
+				"yellowPastel": "#EAF2D7",
+				"turquoisePastel": "#B3DEE2"
+			}
+		}
 	},
-	plugins: [daisyui],
+	plugins: [daisyui]
 }
