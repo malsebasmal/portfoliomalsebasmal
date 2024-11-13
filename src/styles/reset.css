@@ -13,7 +13,7 @@
 */
 /* Aquí definimos las Custom properties */
 :root {
-  --blanco: black;
+  --blanco: white;
   /* Tipografía */
   --tipo-principal: 'Comfortaa Variable', system-ui;
   --tipo-secundaria: 'Comfortaa Variable', system-ui;
@@ -22,7 +22,7 @@
 /* Las adaptamos al modo oscuro */
 @media (prefers-color-scheme: dark) {
   :root {
-    --negro: white;
+    --negro: black;
   }
 }
 /* Opcional */
@@ -133,9 +133,9 @@ table, tr, td {
 
 /* Evitamos problemas con los SVG */
 svg {
-  width: 100%;
+  /* width: 100%; */
   display: block;
-  fill: currentColor;
+  /* fill: currentColor; */
 }
 
 /* (Probándolo, no usar en producción) En el caso de añadir una  */
