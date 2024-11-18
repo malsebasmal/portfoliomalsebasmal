@@ -1,4 +1,8 @@
 ---
+import Eye from "@/icons/Eye.astro"
+import Github from "@/icons/Github.astro"
+import Badge from "@/components/Badge.astro"
+
 const PROJECTS = [
   {
     name: "Habet",
@@ -48,14 +52,29 @@ const PROJECTS = [
 <section id="projects" class="pt-28 w-full flex justify-center items-center mt-20">
   <div class="flex flex-row flex-wrap justify-center gap-4">
     {PROJECTS.map((project) => (
-      <div class="mockup-browser rounded-lg bg-base-300 border w-[27vw] h-full">
+      <div class="group relative mockup-browser rounded-lg bg-base-300 border w-[27vw] h-full">
         <div class="mockup-browser-toolbar">
-          <div class="input">{project.urlPage}</div>
+          <div class="input text-white text-lg">{project.urlPage}</div>
         </div>
         <div class="bg-base-200 flex justify-center">
           <img class="w-full" src={project.img} alt={project.name} />
+        </div>
+
+        <div class="absolute inset-0 bg-black/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center gap-4">
+          <div class="flex gap-4">
+            <a href={project.github} target="_blank" class="flex gap-2 items-center justify-center px-4 py-2 bg-[#1f2937] rounded-md text-lg text-white hover:text-gray-300">
+              <Github class=""/> Code
+            </a>
+            <a href={project.urlPage} target="_blank" class="flex gap-2 items-center justify-center px-4 py-2 bg-[#1f2937] rounded-md text-lg text-white hover:text-gray-300">
+              <Eye class=""/> Preview
+            </a>
+          </div>
+          <div>
+            <Badge />
+          </div>
         </div>
       </div>
     ))}
   </div>
 </section>
+
