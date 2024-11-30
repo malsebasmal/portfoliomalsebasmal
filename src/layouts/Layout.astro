@@ -6,7 +6,7 @@ interface Props {
 const { title } = Astro.props
 
 import "@/styles/reset.css"
-import '@fontsource-variable/comfortaa';
+import '@fontsource-variable/figtree'
 ---
 
 <!doctype html>
@@ -19,13 +19,12 @@ import '@fontsource-variable/comfortaa';
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body class="px-2 flex flex-col items-center w-full h-auto">
+	<body class="absolute top-0 z-[-2] bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] w-full h-auto flex flex-col items-center">
 		<slot />
 	</body>
 </html>
 <style is:global>
 	html {
 		font-family: 'Comfortaa Variable', system-ui;
-		background-color: #00000095 !important;
 	}
 </style>

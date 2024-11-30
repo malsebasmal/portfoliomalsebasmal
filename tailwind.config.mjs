@@ -6,7 +6,7 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-				"pinkStrong": "#E27396",
+				"cPink": "#e535af",
 				"pinkSmooth": "#EA9AB2",
 				"pinkPastel": "#EFCFE3",
 				"yellowPastel": "#EAF2D7",

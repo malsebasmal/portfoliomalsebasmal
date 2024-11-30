@@ -1,6 +1,8 @@
 /*TODO: https://github.com/eduardofierropro/Reset-CSS */
 
 @charset "UTF-8";
+@import '@fontsource-variable/figtree';
+
 /*
 
   Con este reset vamos a resolver:
@@ -15,8 +17,8 @@
 :root {
   --blanco: white;
   /* Tipografía */
-  --tipo-principal: 'Comfortaa Variable', system-ui;
-  --tipo-secundaria: 'Comfortaa Variable', system-ui;
+  --tipo-principal: 'Figtree Variable', sans-serif;
+  --tipo-secundaria: 'Figtree Variable', sans-serif;
 }
 
 /* Las adaptamos al modo oscuro */
