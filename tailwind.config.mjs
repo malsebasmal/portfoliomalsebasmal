@@ -7,8 +7,8 @@ export default {
 		extend: {
 			colors: {
 				"cPink": "#e535af",
-				"pinkSmooth": "#EA9AB2",
-				"pinkPastel": "#EFCFE3",
+				"cBlue": "#479dec",
+				"cYellow": "#e8cb06",
 				"yellowPastel": "#EAF2D7",
 				"turquoisePastel": "#B3DEE2"
 			}

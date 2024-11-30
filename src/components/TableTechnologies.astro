@@ -1,29 +1,34 @@
 ---
 const TECHNOLOGIES = [
-  { name: "JavaScript", icon: "/technologies/javascript.svg" },
-  { name: "HTML", icon: "/technologies/html.svg" },
-  { name: "CSS", icon: "/technologies/css.svg" },
-  { name: "TypeScript", icon: "/technologies/typescript.svg" },
-  { name: "Ruby On Rails", icon: "/technologies/rails.svg" },
-  { name: "Tailwind CSS", icon: "/technologies/tailwind.svg" },
-  { name: "Sass", icon: "/technologies/sass.svg" },
-  { name: "Astro", icon: "/technologies/astroother.svg" },
-  { name: "React", icon: "/technologies/react.svg" },
-  { name: "Node.js", icon: "/technologies/nodejs.svg" },
-  { name: "Express", icon: "/technologies/express.svg" },
-  { name: "PostgreSQL", icon: "/technologies/postgresql.svg" },
-  { name: "MongoDB", icon: "/technologies/mongodb.svg" },
-  { name: "Mongoose", icon: "/technologies/mongoose.svg" },
-  { name: "Vite", icon: "/technologies/vite.svg" },
-  { name: "Figma", icon: "/technologies/figma.svg" }
+  {
+    name: "JavaScript",
+    icon: "/technologies/javascript.svg",
+    colorOne: "#f7df1e",
+    colorTwo: "black"
+  },
+  {name: "HTML", icon: "/technologies/html.svg" },
+  {name: "CSS", icon: "/technologies/css.svg" },
+  {name: "TypeScript", icon: "/technologies/typescript.svg" },
+  {name: "Ruby On Rails", icon: "/technologies/rails.svg" },
+  {name: "Tailwind CSS", icon: "/technologies/tailwind.svg" },
+  {name: "Sass", icon: "/technologies/sass.svg" },
+  {name: "Astro", icon: "/technologies/astroother.svg" },
+  {name: "React", icon: "/technologies/react.svg" },
+  {name: "Node.js", icon: "/technologies/nodejs.svg" },
+  {name: "Express", icon: "/technologies/express.svg" },
+  {name: "PostgreSQL", icon: "/technologies/postgresql.svg" },
+  {name: "MongoDB", icon: "/technologies/mongodb.svg" },
+  {name: "Mongoose", icon: "/technologies/mongoose.svg" },
+  {name: "Vite", icon: "/technologies/vite.svg" },
+  {name: "Figma", icon: "/technologies/figma.svg" }
 ]
 ---
 
-<ul class="flex flex-wrap gap-3 justify-center">
+<ul class="flex flex-wrap gap-4 justify-center">
   {TECHNOLOGIES.map((tech) => (
-    <li class="flex justify-center items-center gap-3 bg-pink-100 py-2 px-4 rounded-md">
-      <img class="w-14" src={tech.icon} alt={tech.name} />
-      <h3 class="text-lg">{tech.name}</h3>
+    <li class="flex justify-center items-center bg-transparent text-white py-4 px-8 rounded-md border-dashed border-2 border- relative">
+      <img class="w-6 absolute top-[2px] right-[2px] rounded-sm" src={tech.icon} alt={tech.name} />
+      <h3 class="text-lg font-medium">{tech.name}</h3>
     </li>
   ))}
 </ul>

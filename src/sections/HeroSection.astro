@@ -1,5 +1,4 @@
 ---
-import Title from "@/components/Title.astro"
 import Check from "@/icons/Check.astro"
 ---
 
@@ -13,15 +12,15 @@ import Check from "@/icons/Check.astro"
     </h3>
   </div>
   <div class="">
-    <ul class="flex flex-col gap-2 text-white">
-      <li class="flex items-center">
-        <Check /> You can see my github 
+    <ul class="flex flex-col gap-3 text-white text-lg">
+      <li class="flex items-center gap-1 group">
+        <Check class="mr-1 group-hover:text-cYellow"/> You can see <a href="https://github.com/malsebasmal" target="_blank" class="font-semibold group-hover:text-cYellow">GitHub</a>
       </li>
-      <li class="flex items-center">
-        <Check /> Check my linkedin
+      <li class="flex items-center gap-1 group">
+        <Check class="mr-1 group-hover:text-cBlue"/> Check my <a href="https://www.linkedin.com/in/antoniomaldonadotech" target="_blank" class="font-semibold group-hover:text-cBlue">LinkedIn</a>
       </li>
-      <li class="flex items-center">
-        <Check /> You can see my etc
+      <li class="flex items-center gap-1"> 
+        <Check class="mr-1"/> Or maybe your prefer  
       </li>
     </ul>
   </div>
