@@ -9,10 +9,11 @@ export default {
 				"cPink": "#e535af",
 				"cBlue": "#479dec",
 				"cYellow": "#e8cb06",
-				"yellowPastel": "#EAF2D7",
-				"turquoisePastel": "#B3DEE2"
 			}
 		}
 	},
-	plugins: [daisyui]
+	plugins: [
+		daisyui,
+    require('tailwindcss-animated')
+	]
 }
