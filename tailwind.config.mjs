@@ -9,7 +9,8 @@ export default {
 				"cPink": "#e535af",
 				"cBlue": "#479dec",
 				"cYellow": "#e8cb06",
-				"cRed": "#f43f5e"
+				"cRed": "#f43f5e",
+				"cPurple": "#826dff"
 			}
 		}
 	},
