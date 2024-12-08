@@ -42,7 +42,7 @@ const PROJECTS = [
 ]
 ---
 
-<section id="projects" class="pt-28 w-full flex justify-center items-center mt-20">
+<section id="projects" class="pt-0 md:pt-28 w-full flex justify-center items-center mt-20">
   <div class="grid grid-cols-1 lg:grid-cols-2 auto-rows-auto gap-4">
     {PROJECTS.map((project) => (
       <div class="group relative mockup-browser rounded-lg bg-base-300 border w-full h-full">
@@ -54,7 +54,7 @@ const PROJECTS = [
         </div>
 
         <div class="absolute inset-0 bg-black/10 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease flex flex-col items-center justify-center gap-4">
-          <div class="flex gap-4">
+          <div class="flex flex-wrap justify-center items-center gap-4">
             <a href={project.github} target="_blank" class="flex gap-2 items-center justify-center px-4 py-2 bg-[#1f2937] rounded-md text-lg text-white hover:text-gray-300">
               <Github class=""/> Code
             </a>
