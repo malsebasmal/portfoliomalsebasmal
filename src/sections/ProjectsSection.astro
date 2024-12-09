@@ -55,11 +55,11 @@ const PROJECTS = [
 
         <div class="absolute inset-0 bg-black/10 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease flex flex-col items-center justify-center gap-4">
           <div class="flex flex-wrap justify-center items-center gap-4">
-            <a href={project.github} target="_blank" class="flex gap-2 items-center justify-center px-4 py-2 bg-[#1f2937] rounded-md text-lg text-white hover:text-gray-300">
-              <Github class=""/> Code
+            <a href={project.github} target="_blank" class="flex gap-2 items-center justify-center px-4 py-2 bg-white rounded-md text-lg text-cPink hover:bg-cPink hover:text-white transition duration-150 ease font-medium">
+              <Github /> Code
             </a>
-            <a href={project.urlPage} target="_blank" class="flex gap-2 items-center justify-center px-4 py-2 bg-[#1f2937] rounded-md text-lg text-white hover:text-gray-300">
-              <Eye class=""/> Preview
+            <a href={project.urlPage} target="_blank" class="flex gap-2 items-center justify-center px-4 py-2 bg-white rounded-md text-lg text-cPink hover:bg-cPink hover:text-white transition duration-150 ease font-medium">
+              <Eye /> Preview
             </a>
             <Modal id={`modal-${project.name}`} name={project.name} description={project.description} />
           </div>

@@ -1,14 +1,21 @@
 ---
-const { name, description, id } = Astro.props;
+import Info from "@/icons/Info.astro"
+import Close from "@/icons/Close.astro"
+
+const { name, description, id } = Astro.props
 ---
 
-<button class="btn" onclick={`document.getElementById('${id}').showModal()`}>open modal</button>
+<button class="flex gap-2 items-center justify-center px-4 py-2 bg-white rounded-md text-lg text-cPink hover:bg-cPink hover:text-white transition duration-150 ease font-medium" onclick={`document.getElementById('${id}').showModal()`}>
+  <Info /> About
+</button>
 <dialog id={id} class="modal">
   <div class="modal-box">
     <form method="dialog">
-      <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+      <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+        <Close class="text-white" />
+      </button>
     </form>
-    <h3 class="text-lg font-bold">{name}</h3>
-    <p class="py-4">{description}</p>
+    <h3 class="text-white text-xl font-bold pt-4">{name}</h3>
+    <p class="text-white pt-2 text-pretty">{description}</p>
   </div>
 </dialog>
