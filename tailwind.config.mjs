@@ -11,6 +11,11 @@ export default {
 				"cYellow": "#e8cb06",
 				"cRed": "#f43f5e",
 				"cPurple": "#826dff"
+			},
+			screens: {
+				"mobileS": "320px",
+				"mobileM": "375px",
+				"mobileL": "425px"
 			}
 		}
 	},
