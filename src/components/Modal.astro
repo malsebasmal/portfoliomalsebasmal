@@ -6,7 +6,7 @@ const { name, description, id } = Astro.props
 ---
 
 <button class="flex gap-2 items-center justify-center px-4 py-2 bg-white rounded-md text-lg text-cPink hover:bg-cPink hover:text-white transition duration-150 ease font-medium" onclick={`document.getElementById('${id}').showModal()`}>
-  <Info /> About
+  <Info /> Info
 </button>
 <dialog id={id} class="modal">
   <div class="modal-box">
