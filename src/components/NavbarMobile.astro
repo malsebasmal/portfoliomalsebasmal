@@ -4,14 +4,14 @@ import CvButton from "./CvButton.astro"
 import GmailButton from "./GmailButton.astro"
 ---
 
-<nav class="flex lg:hidden flex-row justify-between items-center w-full h-full">
+<nav class="flex lg:hidden flex-row justify-between items-center w-full h-full -mt-5">
   <div class="dropdown w-full">
     <div tabindex="0">
       <MenuBurger class="text-white size-10"/>
     </div>
     <ul
       tabindex="0"
-      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] w-full flex flex-col gap-4 items-start mt-3">
+      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] w-full flex flex-col gap-4 items-start mt-3 p-3">
       <li>
         <a class="bg-none text-white hover:text-cPink font-bold py-2 px-4 text-xl transition duration-150 ease" href="#projects">Proyectos</a>
       </li>

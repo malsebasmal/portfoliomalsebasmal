@@ -1,0 +1,46 @@
+---
+import PROJECTS from "@/helpers/Projects"
+import { Image } from "astro:assets"
+import Code from "@/icons/Code.astro"
+import Modal from "@/components/Modal.astro"
+import Github from "@/icons/Github.astro"
+import Eye from "@/icons/Eye.astro"
+---
+
+<section id="projects" class="pt-28 w-full flex flex-col justify-center items-center">
+  <div class="w-full flex justify-start pb-5">
+    <h3 class="text-white flex justify-center items-center gap-2 text-3xl font-semibold">
+      <Code class="size-8" /> Proyectos
+    </h3>
+  </div>
+  <div class="grid grid-cols-1 lg:grid-cols-2 auto-rows-auto gap-4">
+    {PROJECTS.map((project) => (
+      <div class="group relative mockup-browser rounded-lg bg-base-300 border w-full h-full">
+        <div class="mockup-browser-toolbar">
+          <div class="input text-white text-lg">{project.urlPage}</div>
+        </div>
+        <div class="bg-base-200 flex justify-center">
+          <Image class="w-full" src={project.imgSrc} alt={project.imgAlt} />
+        </div>
+        <div class="absolute inset-0 bg-black/10 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease flex flex-col items-center justify-center gap-4">
+          <div class="flex flex-wrap justify-center items-center gap-4">
+            {project.github && project.github !== "no disponible" ? (
+              <a href={project.github} target="_blank" class="flex gap-2 items-center justify-center px-4 py-2 bg-white rounded-md text-lg text-cPink hover:bg-cPink hover:text-white transition duration-150 ease font-medium">
+                <Github /> Código
+              </a>
+            ) : (
+              <span class="flex gap-2 items-center justify-center px-4 py-2 bg-gray-400 rounded-md text-lg text-white font-medium cursor-not-allowed">
+                <Github /> No disponible
+              </span>
+            )}
+            <a href={project.urlPage} target="_blank" class="flex gap-2 items-center justify-center px-4 py-2 bg-white rounded-md text-lg text-cPink hover:bg-cPink hover:text-white transition duration-150 ease font-medium">
+              <Eye /> Vista
+            </a>
+            <Modal id={`modal-${project.name}`} name={project.name} description={project.description} />
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
+
